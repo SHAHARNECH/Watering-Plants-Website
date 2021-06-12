@@ -3,10 +3,17 @@ python and html website that lets you make your own personal calendar for your p
 python-flask backend using SQLAlchemy with fullcalender and front with html&css
 
 **registration and sign up
-![w3](https://user-images.githubusercontent.com/71632360/121768304-46365280-cb66-11eb-917e-c38878aa1d11.jpg)
+
+![w3](https://user-images.githubusercontent.com/71632360/121768399-b349e800-cb66-11eb-89b7-50b4107108bf.jpg)
+
+**
 
 **adding plants to database
-![w1](https://user-images.githubusercontent.com/71632360/121768306-48001600-cb66-11eb-96ac-04d5815b0e29.jpg)
 
-**calender itself
-![w2](https://user-images.githubusercontent.com/71632360/121768292-3c145400-cb66-11eb-9ce7-0b333d9846ed.jpg)
+![w1](https://user-images.githubusercontent.com/71632360/121768405-bc3ab980-cb66-11eb-9926-ddd6627ae4d0.jpg)
+
+**
+
+**calender itself 
+
+![w2](https://user-images.githubusercontent.com/71632360/121768410-c0ff6d80-cb66-11eb-85ba-11bd024314b5.jpg)
