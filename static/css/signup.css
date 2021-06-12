@@ -1,0 +1,74 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ffefe9
+
+}
+
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.jumbotron{
+  background-color: #9bb2b1 !important;
+}
+
+
+.btn-info{
+  border-color: #fff !important;
+  background-color: #659a96 !important;
+  color: #ffefe9 !important;
+    }
+.btn-info:hover,
+    .btn-info:active,
+    .btn-info:visited,
+    .btn-info:focus {
+      background-color: #ffefe9 !important;
+      border-color: #68b0ab !important;
+      color: #68b0ab !important;
+    }
+
+a{
+  color: #68b0ab !important;
+}
+
+.links{
+  padding-right: 3rem;
+}
+
+p.error{
+  color: #dc3545;
+  font-weight: bold;
+}

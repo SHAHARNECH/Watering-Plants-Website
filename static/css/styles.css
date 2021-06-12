@@ -1,0 +1,280 @@
+body {
+  font-family: 'Hammersmith One', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+
+}
+
+h1 {
+ font-family: 'Secular One', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  color: #68b0ab;
+}
+
+#title {
+  z-index: 999;
+  display: block;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: #8fc0a9;
+  color: white;
+}
+
+.container-intro {
+  padding-bottom: 3px;
+}
+
+.navbar {
+  padding: 0 4 4.5rem;
+}
+
+.nav-item {
+  margin: auto;
+
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: auto;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.sign-in{
+padding-bottom: 3rem;
+}
+
+
+#addplant_garden {
+  padding: 10rem 0 10rem 0;
+  color: #68b0ab;
+  position: static;
+}
+
+.image-button {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #68b0ab;
+  position: static;
+}
+@media (max-width:700px) {
+img.image-button {
+  display: none;
+}
+}
+
+
+
+
+
+.btn-info{
+  border-color: #fff !important;
+  background-color: #68b0ab !important;
+  color: #ffefe9 !important;
+    }
+.btn-info:hover,
+    .btn-info:active,
+    .btn-info:visited,
+    .btn-info:focus {
+      background-color: #ffefe9 !important;
+      border-color: #68b0ab !important;
+      color: #68b0ab !important;
+    }
+
+.container-mini-image {
+  padding-left: 10rem;
+  background-color: #fff;
+}
+
+.feature-image {
+  color: #8fc0a9;
+  padding-bottom: 7px;
+}
+
+#myGarden {
+  padding: 2rem 0 10rem 0;
+  background-color:#ead3cb;
+  color: #68b0ab;
+}
+
+h2.change_nickname{
+  font-size: 3.5rem;
+}
+
+h3.change_nickname{
+  font-size: 1rem;
+
+}
+
+.change-plantlist{
+  border-color: #68b0ab !important;
+  color: #68b0ab !important;
+}
+.change-plantlist:hover,
+    .change-plantlist:active,
+    .change-plantlist:visited,
+    .change-plantlist:focus {
+      color: #fff !important;
+      border-color: #fff !important;
+    }
+
+.remove-plantlist{
+    color: #70574e !important;
+    }
+.remove-plantlist:hover,
+        .remove-plantlist:active,
+        .remove-plantlist:visited,
+        .remove-plantlist:focus {
+          color: #fff !important;
+
+        }
+
+
+
+.myPlant-image {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 80%;
+}
+
+#calendar-title{
+  background-color: #ead3cb;
+  padding-top: 7rem ;
+  padding-bottom: 1rem;
+  color:#2C3E50;
+}
+
+#calendar-container {
+
+  padding-left: 10rem;
+  padding-top: 0%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 0;
+}
+
+#calendar{
+  width: 60rem;
+  box-shadow: 0px 0px 10px #000;
+  padding: 0;
+  background: #fff;
+  color: #8fc0a9;
+}
+@media (max-width:700px) {
+#calendar {
+  width: 30rem;
+}
+}
+
+#about-us{
+  padding: 4rem 15rem;
+}
+@media (max-width:700px) {
+#about-us,#instructions-div p, #about-text h3 {
+  padding: 0;}
+}
+
+
+#instructions-div p{
+  border-radius: 80%;
+  background-color: #fff;
+  padding: 1rem 20rem;
+  color: #70574e  !important;
+  font-size: 1rem !important;
+  text-align: left !important;
+}
+#about-text h3{
+  font-weight: 400;
+  color: #68a186  !important;
+  font-size: 1.3rem !important;
+  text-align: center !important;
+
+}
+
+#footer{
+  padding: 2rem 30rem;
+}
+@media (max-width:700px) {
+#footer, .copyright {
+
+  display: none;}
+}
+
+
+.copyright{
+  text-align: center;
+  padding-top: 15px;
+}
+
+.jumbotron{
+  background-color: #9bb2b1 !important;
+}
+.is-dry{
+  background-color: #9bb2b1 !important;
+}
+
+.modal-footer,.modal-body, .modal-title{
+    position:inherit !important;
+    display: contents !important;
+    color: #357e5c !important;
+    }
+
+.btn-dry{
+      border-color: #fff !important;
+      background-color: #357e5c !important;
+      color: #ffefe9 !important;
+        }
+.btn-dry:hover,
+            .btn-info:active,
+            .btn-info:visited,
+            .btn-info:focus {
+              background-color: #ffefe9 !important;
+              border-color: #357e5c !important;
+              color: #357e5c !important;
+            }
+.welcome{
+  padding: 10rem 0;
+}
+.btn-sign{
+      border-color: #fff !important;
+      background-color: #8fc0a9 !important;
+      color: #ffefe9 !important;
+        }
+.btn-sign:hover
+           {
+              background-color: #ffefe9 !important;
+              border-color: #357e5c !important;
+              color: #8fc0a9 !important;
+            }

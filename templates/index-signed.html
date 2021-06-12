@@ -1,0 +1,211 @@
+{% extends 'index-base.html' %}
+
+{% block title%}
+{% endblock %}
+
+{% block content %}
+
+
+<section id="addplant_garden">
+  <div>
+    <h1> Choose Your Plants</h1>
+  </div>
+  <div class="container-mini-image">
+
+    <form action="/addPlant/{{curr_user.email}}" method="POST">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 col-lg-2">
+          <a><img src="../static/images/monestera2.jpg" alt="monestera" class="image-button"></a>
+          </br>  </br>
+          <button class="btn btn-info"  name="monestera">monestera</button>
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2">
+          <a><img src="../static/images/calathea.png" alt="calathea" class="image-button"></a>
+            </br>  </br>
+          <button class="btn btn-info" name="calathea">calathea</button>
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2">
+          <a><img src="../static/images/succulent.jpg" alt="succulent" class="image-button"></a>
+          </br>  </br>
+          <button class="btn btn-info" name="succulent">succulent</button>
+        </div>
+          <div class="col-sm-4 col-md-3 col-lg-2 ">
+            <a><img src="../static/images/sahlab.jpg" alt="orchid" class="image-button"></a>
+          </br>  </br>
+            <button class="btn btn-info" name="orchid">orchid</button>
+          </div>
+          <div class="col-sm-4 col-md-3 col-lg-2">
+            <a><img src="../static/images/fotus.jpg" alt="fotus/nanuk" class="image-button"></a>
+          </br>  </br>
+            <button class="btn btn-info" name="fotus/nanuk">fotus/nanuk</button>
+          </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+
+<!-- My garden -->
+<section id="myGarden">
+  </br></br>
+  <h2 class="change_nickname">{{curr_user.name}}'s jungle</h2>
+  {%for index in curr_user.plants_list%}
+
+    <form action="/remove/{{curr_user.email}}/{{index}}" method="POST">
+        <h3 class="change_nickname"><span style="text-decoration: underline;">Plant #{{index}}:</span>  {{curr_user.plants_list[index].plant_name}}
+    <input type="submit" class="btn btn-sm remove-plantlist" value="Remove" name="Remove">
+    </form>
+</h3>
+
+      <form action="/nickname/{{curr_user.email}}/{{index}}" method="POST">
+        <label style="color:#fff" for="new_plant_name">Change name?</label>
+        <input type="text" name="new_plant_name" id="new_plant_name" placeholder="new name" required autofocus>
+        <input type="submit" class="btn btn-sm change-plantlist" value="Change" name="Change">
+        </form>
+
+
+
+  {% endfor %}
+  </br></br>
+</section>
+
+
+
+<!-- Calendar -->
+
+<section id="calendar-title">
+  <h1>Watering Plants Calendar</h1>
+  <div id='calendar-container'>
+    <div id='calendar'></div>
+    <div id="calendarModal" class="modal fade">
+
+
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 id="plantId" hidden="true"></h2>
+        <h4 id="modalTitle" class="modal-title"></h4>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> <span class="sr-only">close</span></button>
+
+        </div>
+        <div id="modalBody" class="modal-body">Is the soil dry? </div>
+
+
+
+        <form method="POST" onsubmit="javascript:get_action(this,'{{curr_user.email}}');">
+
+          <div class="modal-footer">
+              <button type="submit" class="btn btn-dry" value="yes" name="is_dry">Yes</button>
+          </div>
+          <div class="modal-footer">
+              <button type="submit"  value="no"  class="btn btn-dry" name="is_dry">No</button>
+          </div>
+       </form>
+
+    </div>
+</div>
+</div>
+  </div>
+  </br>
+  <div id="instructions-div">
+    </br>
+    <h1 style="font-size:2rem">instructions</h1>
+    <p>
+    After signing in and adding your plants to your 'jungle list', you'll need to check for the first time if the plant's soil is dry!
+    </br></br>Click on the plant event showing on your calendar today, if the soil is still wet it will automatically add an event to check again in a couple of days,
+      otherwise it is time to <span style="font-size: 1.5rem;font-weight:bold">water!</span> The calender will add the next time you need to check depending on the plant type and season.
+    </br></br>All of your events will be saved so you will know when and which plant needs water the next time you sign in. </p>
+
+    <h1 style="font-size:3rem;color:#2C3E50; padding-right:3rem"><span style="padding-right:3rem">.</span><span style="padding-right:3rem">.</span>.</h1>
+
+</section>
+
+
+<!-- Contact -->
+<section id="about-us">
+  </br>
+<h3  style="font-size:2.5rem">a little about me.. </h3>
+<div id="about-text">
+  <h3>
+    My name is <span style="font-weight:bold">Shahar</span>, second year Computer Science student and a proud mother of Plants, plural..
+  After risking their health due to over-irrigation, I decided it was time to make a calendar and track
+    when I last watered each plant, and learn when they are thirsty again.
+</br></br>
+  The project was built using <span style="font-weight:bold">python-flask</span>, <span style="font-weight:bold">SQL database</span> and of course <span style="font-weight:bold">html</span> and <span style="font-weight:bold">javascript</span>.
+  It was all <span style="text-decoration: underline">self-educated</span> and was an amazing experience to learn all these new techniques!</h3>
+  <h1 style="font-size:2rem">
+    Hope you enjoy it!
+  </h1>
+
+</section>
+
+
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="row">
+    <div class="col col-lg-4">
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div class="col col-lg-4">
+      <i class="fab fa-instagram"></i>
+    </div>
+    <div class="col col-lg-4">
+      <i class="fab fa-facebook"></i>
+    </div>
+    <div class="col col-lg-12 copyright">
+      <p>© Copyright 2021 Plant Calendar</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+        aspectRatio: 2,
+        height:parent,
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth'
+        },
+        defaultView: 'dayGridMonth',
+        navLinks: true, // can click day/week names to navigate views
+        editable: true,
+        events: [
+          {%for event in curr_user.user_events%}
+            {
+              title: '{{event.which_plant}}',
+              id: '{{event.plant_id}}',
+              date: '{{event.date}}',
+              visited: '{{event.visited}}'
+            },
+          {% endfor %}
+        ],
+        eventClick: function(event, element) {
+          if (event.event.extendedProps.visited == "False"){
+            $('#modalTitle').html(event.event.title);
+            $('#plantId').html(event.event.id);
+            $('#calendarModal').modal();
+          }
+        },
+        eventLimit: true, // allow "more" link when too many events
+        eventColor: '#2C3E50',
+        eventRender: function(event, element) {
+        if (event.event.extendedProps.visited == 'True') {
+            event.el.style.backgroundColor = '#8fc0a9';
+        }
+    },
+
+      });
+      calendar.render();
+    })
+  </script>
+{% endblock %}
