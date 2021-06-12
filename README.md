@@ -1,6 +1,7 @@
 # Watering-Plants-Website
 python and html website that lets you make your own personal calendar for your plants
-python-flask backend using SQLAlchemy with fullcalender and front with html&css
+
+*flask backend using SQLAlchemy with fullcalender and front with html&css
 
 **registration and sign up
 
