@@ -1,7 +1,5 @@
 # Watering-Plants-Website
-python and html website that lets you make your own personal calendar for your plants
-
-python-flask backend using SQLAlchemy with fullcalender and front with html&css
+python-flask backend using SQLAlchemy with fullcalender and front with html that lets you make your own personal calendar for your plants
 
 ***Instructions:***
 After signing in and adding your plants to your 'jungle list', you'll need to check for the first time if the plant's soil is dry! Click on the plant event showing on your calendar today, if the soil is still wet it will automatically add an event to check again in a couple of days, otherwise it is time to water! The calender will add the next time you need to check depending on the plant type and season. All of your events will be saved so you will know when and which plant needs water the next time you sign in.
