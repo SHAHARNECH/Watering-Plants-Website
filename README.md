@@ -1,4 +1,4 @@
-## Water_plan-T_Mobile_App
+## Watering-Plants Web app
 
 ## General info
 python-flask backend using SQLAlchemy with fullcalender and front with html that lets you make your own personal calendar for your plants
