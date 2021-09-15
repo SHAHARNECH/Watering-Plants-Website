@@ -3,7 +3,6 @@
 ## General info
 python-flask backend using SQLAlchemy with fullcalender and front with html that lets you make your own personal calendar for your plants
 
-
 ## App Use
 * After signing in and adding your plants to your 'jungle list', you'll need to check for the first time if the plant's soil is dry! 
 * Click on the plant event showing on your calendar today, if the soil is still wet it will automatically add an event to check again in a couple of days, otherwise it is time to water!
@@ -13,6 +12,7 @@ python-flask backend using SQLAlchemy with fullcalender and front with html that
 ## Project creation:
 * python- flask
 * html, CSS, js
+* SQLAlchemy db
 * final project after finishing Udemy Web development course
 	
 ## App screenshots:
