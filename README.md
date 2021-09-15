@@ -11,9 +11,9 @@ python-flask backend using SQLAlchemy with fullcalender and front with html that
 * All of your events will be saved so you will know when and which plant needs water the next time you sign in.
 
 ## Project creation:
-* java version: 11
-* android studio
-* 7 day challenge- summer vacation self project
+* python- flask
+* html, CSS, js
+* final project after finishing Udemy Web development course
 	
 ## App screenshots:
 
